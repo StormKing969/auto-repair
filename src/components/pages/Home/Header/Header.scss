@@ -1,0 +1,52 @@
+.header {
+  height: 35rem;
+}
+
+.header_swiper_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    text-transform: capitalize;
+  }
+}
+
+.header01 {
+  background-image: url(../../../../images/technician.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header02 {
+  background-image: url(../../../../images/service_price.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header03 {
+  background-image: url(../../../../images/oil_change.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header04 {
+  background-image: url(../../../../images/tire_change.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

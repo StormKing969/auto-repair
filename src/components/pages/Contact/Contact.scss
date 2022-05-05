@@ -1,0 +1,23 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    hr {
+        width: 5rem;
+        color: royalblue;
+        margin: .5rem 0 1.5rem;
+    }
+
+    .contact_subtitle {
+        margin: 0 0 3rem;
+        text-align: center;
+    }
+}
