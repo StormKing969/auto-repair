@@ -1,7 +1,7 @@
 import React from "react";
-import L from "leaflet";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import MarkerIcon from "../../../../images/icon-location.svg";
+import L from "leaflet"
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import MarkerIcon from "../../../../images/icon-location.svg"
 import "leaflet/dist/leaflet.css";
 
 function GetIcon(iconSize) {
@@ -13,13 +13,14 @@ function GetIcon(iconSize) {
 
 const Map = () => {
   const position = [41.680946, -70.298952];
+
   return (
     <div>
       <MapContainer
         center={position}
-        zoom={17}
-        style={{ width: "100vw", height: "55vh" }}
-        scrollWheelZoom={false}
+        zoom={300}
+        style={{ width: "100vw", height: "35vh" }}
+        scrollWheelZoom={true}
       >
         <TileLayer
           url="https://api.maptiler.com/maps/outdoor/256/{z}/{x}/{y}.png?key=Rg7ubtvKIpsuAAm1AsLT"
@@ -30,6 +31,7 @@ const Map = () => {
           <Popup>Location of the marker.</Popup>
         </Marker>
       </MapContainer>
+      ,
     </div>
   );
 };
