@@ -1,0 +1,85 @@
+.intro_container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: default;
+
+  .bg_overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(90, 90, 90, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.header_nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 5rem;
+}
+
+.intro_bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.intro_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2rem 3rem;
+  padding: 0 5rem;
+  color: white;
+
+  .intro_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+
+    .bold {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.intro_appointment {
+  position: absolute;
+  top: 65%;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #f7a801;
+  background-color: #f7a801;
+  width: fit-content;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #291c01;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,60 @@
+.stats_container {
+  background-color: rgb(7, 7, 15);
+  color: white;
+}
+
+.stats_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .grey_color {
+    color: gray;
+    margin: 2rem 0;
+  }
+
+  .regular_font {
+    font-weight: 400;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.stats_values_container {
+  display: flex;
+  flex-direction: row;
+
+  .stats_values {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: 0;
+      font-size: 4rem;
+      color: #f7a801;
+    }
+
+    .vertical_line {
+      border-left: 1px solid white;
+      height: 100%;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.work_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

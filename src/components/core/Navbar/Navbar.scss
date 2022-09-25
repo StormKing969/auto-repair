@@ -1,0 +1,47 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 10%;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 0.25rem;
+  }
+}
+
+.nav_links {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    li {
+      margin: 0 1rem;
+      font-weight: 700;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: #f7a801;
+          }
+      }
+    }
+  }
+}
