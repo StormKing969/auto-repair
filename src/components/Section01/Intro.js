@@ -8,10 +8,9 @@ const Intro = () => {
     <div className="intro_container">
       <div className="bg_overlay">
         <div className="header_nav">
-
-        <Navbar></Navbar>
+          <Navbar></Navbar>
         </div>
-        
+
         <div className="intro_bg">
           <img src={Header_bg} alt="intro background" />
         </div>

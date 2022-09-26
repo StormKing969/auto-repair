@@ -1,5 +1,5 @@
 .stats_container {
-  background-color: rgb(7, 7, 15);
+  background-color: rgb(34, 34, 46);
   color: white;
 }
 
@@ -51,6 +51,7 @@
 .work_img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
 
   img {
     width: 100%;
