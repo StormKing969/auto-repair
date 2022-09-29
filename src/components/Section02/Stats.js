@@ -7,7 +7,7 @@ import "./Stats.scss";
 
 const Stats = () => {
   return (
-    <div className="stats_container">
+    <div className="stats_container" id="stats_container">
       <div className="stats_content">
         <h3 className="grey_color">SOME STATISTICS ABOUT US</h3>
         <h1>AUTO REPAIR TECHNICAL STATISTICS</h1>

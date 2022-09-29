@@ -5,7 +5,7 @@ import "./intro.scss";
 
 const Intro = () => {
   return (
-    <div className="intro_container">
+    <div className="intro_container" id="intro_container">
       <div className="bg_overlay">
         <div className="header_nav">
           <Navbar></Navbar>

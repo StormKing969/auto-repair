@@ -7,6 +7,7 @@
   background-color: transparent;
   color: white;
   cursor: pointer;
+  scroll-behavior: smooth;
 }
 
 .nav_logo {
@@ -37,6 +38,7 @@
       a {
         text-decoration: none;
         color: white;
+        transition: all ease-in-out .3s;
 
         &:hover {
           color: #f7a801;

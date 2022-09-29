@@ -22,7 +22,7 @@ const Appointment = () => {
   const position = [41.680946, -70.298952];
 
   return (
-    <div className="appointment_container">
+    <div className="appointment_container" id="appointment_container">
       <div className="appointment_section01">
         <img src={Img} alt="service images" />
 
@@ -34,7 +34,7 @@ const Appointment = () => {
           </p>
 
           <div className="appointment_section01_link">
-            <a href="#contact">Book an Appointment</a>
+            <a href="tel:+18001234567">Book an Appointment</a>
             <a href="#contact">Get quote</a>
           </div>
         </div>
