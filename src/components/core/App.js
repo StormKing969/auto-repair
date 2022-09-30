@@ -1,22 +1,24 @@
 import React from "react";
-
-import Intro from "../Section01/Intro";
-import Stats from "../Section02/Stats";
-import Testimonials from "../Section03/Testimonials";
-import Appointment from "../Section04/Appointment";
-import Footer from "./Footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Main from "../main/Main"
+import History from "../pages/History/History";
+import Schedule from "../pages/Schedule/Schedule";
+import Error from "../pages/Error/Error";
 
 import "./App.scss";
 
 const App = () => {
   return (
-    <div>
-      <Intro></Intro>
-      <Stats></Stats>
-      <Testimonials></Testimonials>
-      <Appointment></Appointment>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+            <Route exact path="/" element={<Main />} />
+            <Route exact path="/about" element={<History />} />
+            <Route exact path="/schedule" element={<Schedule />} />
+            <Route exact path="/*" element={<Error />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

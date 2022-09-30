@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "../core/Navbar/Navbar";
+import { Link } from "react-router-dom";
+import Navbar from "../../core/Navbar/Navbar";
 import Header_bg from "./img/bg_img.png";
 import "./intro.scss";
 
@@ -23,7 +24,7 @@ const Intro = () => {
           </div>
 
           <div className="intro_appointment">
-            <a href="#Contact">Book An Appointment</a>
+            <Link to="/schedule">Book An Appointment</Link>
           </div>
         </div>
       </div>

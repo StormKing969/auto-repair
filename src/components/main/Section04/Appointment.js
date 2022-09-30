@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Img from "./img/img.png";
+
 import { GoLocation } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -35,7 +37,7 @@ const Appointment = () => {
 
           <div className="appointment_section01_link">
             <a href="tel:+18001234567">Book an Appointment</a>
-            <a href="#contact">Get quote</a>
+            <Link to="/schedule">Get quote</Link>
           </div>
         </div>
       </div>
